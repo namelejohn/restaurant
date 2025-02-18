@@ -1,0 +1,30 @@
+const COLORS = {
+  primary: '#FCBF4C',
+  green: '#057C22',
+  orange: '#FD8200',
+  secondary: '#FFEA00',
+  white: '#FFFFFF',
+  whiteGB: '#FAFAFA',
+  black: '#000000',
+  lightGray: '#DCDCDC',
+  gray: '#CCCCCC',
+  grayText: '#706D6D',
+  transparentWhite: 'rgba(255, 255, 255, 0.7)',
+  error: '#D40000',
+  mainBG: '#032356',
+  placeholder: '#000',
+  transparentBg: 'rgba(0, 0, 0, 0.2)',
+
+  headerBg: 'transparent',
+  inputBg: '#F4F4F4',
+  cardBg: '#F4F4F4',
+  buttonBg: '#FFEA00',
+  screenBg: '#078900',
+  red: '#720F12',
+  redAlt: '#D1512D',
+  textColor: '#FFEA00',
+  btnTextColor: '#101010',
+  menuBg: '#3800AE',
+};
+
+export default COLORS;
