@@ -25,9 +25,6 @@ const CartItem: React.FC<ItemViewProps> = ({item}) => {
           style={styles.image}
           resizeMode="cover"
         />
-        <TouchableOpacity style={styles.iconContainer}>
-          <Image source={require('../assets/heart.png')} style={styles.icon} />
-        </TouchableOpacity>
       </View>
 
       <View style={styles.contentContainer}>
