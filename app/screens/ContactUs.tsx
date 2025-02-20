@@ -32,51 +32,32 @@ const ContactUs = ({navigation}: any) => {
           {({handleChange, handleSubmit, values, errors, touched}) => (
             <View style={styles.formContainer}>
               <StyledInput
-                label={'Enter name'}
-                placeholder="Enter name"
+                label={'Phone number'}
+                placeholder="Task name"
                 value={values.address}
                 onChangeText={handleChange('address')}
               />
               <StyledInput
-                label={'Number'}
-                placeholder="Enter phone number"
+                label={'Address'}
+                placeholder="Main St, Haltwhistle NE49"
                 value={values.phone}
                 keyboardType={'number-pad'}
                 onChangeText={handleChange('phone')}
               />
               <StyledInput
-                label={'Enter table number'}
-                placeholder="Enter table number"
+                label={'Comments'}
+                placeholder="Task name"
                 value={values.index}
                 keyboardType={'number-pad'}
                 onChangeText={handleChange('index')}
               />
-              <View>
-                <Text style={styles.label}>Enter time and date</Text>
-                <View
-                  style={{
-                    flexDirection: 'row',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                  }}>
-                  <StyledInput
-                    placeholder="HH.MM"
-                    value={values.time}
-                    keyboardType={'number-pad'}
-                    onChangeText={handleChange('time')}
-                    icon={require('../assets/time.png')}
-                    containerStyle={{width: '49%'}}
-                  />
-                  <StyledInput
-                    placeholder="DD.MM.YY"
-                    value={values.date}
-                    keyboardType={'number-pad'}
-                    onChangeText={handleChange('date')}
-                    icon={require('../assets/calendar.png')}
-                    containerStyle={{width: '49%'}}
-                  />
-                </View>
-              </View>
+              <StyledInput
+                label={'Index'}
+                placeholder="Task name"
+                value={values.time}
+                keyboardType={'number-pad'}
+                onChangeText={handleChange('time')}
+              />
             </View>
           )}
         </Formik>

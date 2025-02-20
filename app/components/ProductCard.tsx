@@ -25,12 +25,6 @@ const ProductCard = ({item}: {item: Product}) => {
   return (
     <View style={styles.wrapper}>
       <FastImage source={{uri: item.image}} style={styles.image} />
-      <TouchableOpacity style={styles.iconContainer}>
-        <Image
-          source={require('../assets/heart.png')}
-          style={styles.heartIcon}
-        />
-      </TouchableOpacity>
       <View style={styles.card}>
         <View style={styles.titleContainer}>
           <View style={styles.header}>
